@@ -1,0 +1,56 @@
+.Hero {
+  background-color: #495e57;
+  color: white;
+  padding: 25px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.Hero > img {
+  min-width: 183.5px;
+  max-height: 208.5px;
+  border-radius: 3%;
+  position: absolute;
+  right: 20px;
+  top: 240px;
+}
+
+.Hero > div > h1 {
+  color: #f4ce14;
+  font-size: 56px;
+  margin: 0;
+}
+
+.Hero > div > h3 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.Hero > div > button {
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .Hero {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .Hero > img {
+    min-width: 367px;
+    max-height: 417px;
+    position: absolute;
+    top: 40px;
+    right: 280px;
+  }
+  .Hero > div {
+    max-width: 300px;
+  }
+  .Hero > div > button {
+    margin-top: 20px;
+  }
+}
