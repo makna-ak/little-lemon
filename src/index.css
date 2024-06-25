@@ -67,6 +67,48 @@ nav ul li a {
   cursor: pointer;
 }
 
+.Booking {
+  /* background-color: #495e57; */
+  background-image: url("../public/assets/restaurant.jpg");
+  background-size: cover;
+  backdrop-filter: t;
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #edefee;
+}
+
+.Booking h1 {
+  font-size: 46px;
+  margin: 0;
+}
+
+.Booking div {
+  background-color: #495e57;
+  padding: 50px;
+  border-radius: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Booking input {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.Booking select {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 1024px) {
   * {
     font-size: 18px;
