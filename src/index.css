@@ -84,7 +84,7 @@ nav ul li a {
   margin: 0;
 }
 
-.Booking div {
+.booking-container {
   background-color: #495e57;
   padding: 50px;
   border-radius: 5%;
@@ -95,18 +95,25 @@ form {
   flex-direction: column;
 }
 
+label {
+  margin-top: 20px;
+  display: block;
+}
+
 .Booking input {
   border: none;
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 20px;
 }
 
 .Booking select {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  margin-bottom: 20px;
+}
+
+.error {
+  color: rgb(223, 78, 78);
 }
 
 @media (min-width: 1024px) {
@@ -115,6 +122,7 @@ form {
   }
   .primary-btn {
     padding: 15px 25px 15px 25px;
+    margin-top: 20px;
     background-color: #f4ce14;
     border-radius: 10px;
     border: none;
