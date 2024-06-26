@@ -19,7 +19,7 @@ function Booking() {
                             <option value="">22:00</option>
                         </select>
                         <label htmlFor="guests">Number of guests</label>
-                        <input type="range" min={0} max={10} name="guests" id="guests" />
+                        <input type="number" placeholder='1' min={1} max={10} name="guests" id="guests" />
                         <label htmlFor="occasion">Occasion</label>
                         <select name="occasion" id="occasion">
                             <option value="">Birthday</option>

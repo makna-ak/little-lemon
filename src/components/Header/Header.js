@@ -1,11 +1,21 @@
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { useState } from 'react';
 
 function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
     return(
         <header>
-            <Link to={`/`}><img src="/Logo.svg" alt="Little lemon logo" /></Link>
-            <nav>
+            <div>
+                <Link to={`/`}><img src="/Logo.svg" alt="Little lemon logo" /></Link>
+                <button className="menu-toggle" onClick={toggleMenu}aria-label='Open Menu'>
+                    <img src="/assets/icon hamburger menu.svg" alt=""/>
+                </button>
+            </div>
+            <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
                 <ul className='karla-text'>
                     <li><Link>Home</Link></li>
                     <li><Link>About</Link></li>

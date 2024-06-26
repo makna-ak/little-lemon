@@ -25,7 +25,7 @@ function Highlights() {
 
     const listCards = cards.map((item) => {
         return(
-        <article className='card'>
+        <article className='card' key={item.name}>
             <img src={item.img} alt={item.name} />
             <div className='card-description karla-text'>
                 <div className='card-header'>

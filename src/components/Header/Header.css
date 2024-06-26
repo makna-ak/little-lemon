@@ -2,6 +2,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+}
+
+header div {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
 }
 
 header > img {
@@ -21,6 +28,22 @@ nav ul li a {
   color: #333333;
 }
 
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.open {
+  display: block;
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   header {
     flex-direction: row;
@@ -28,5 +51,11 @@ nav ul li a {
   }
   nav > ul {
     flex-direction: row;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
   }
 }
